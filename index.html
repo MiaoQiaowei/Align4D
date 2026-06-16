@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Align4D:Alignment Is All You Need For X-to-4D Generation</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href='./css/google.css' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="./css/Highlight-Clean.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <div class="highlight-clean" style="padding-bottom: 0px; padding-top: 20px;">
+        <div class="container" style="max-width: 1024px; margin-bottom: 20px">
+            <h1 class="text-center" style="font-size:35px;"><b>Align4D</b>: Alignment Is All You Need For X-to-4D Generation</h1>
+        </div>
+        <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
+            <div class="authors">
+                <a> Qiaowei Miao, Kehan Li, Yawei Luo, and Yi Yang </a>
+                <br>
+                <a> IEEE Transactions on Multimedia (TMM) </a>
+                <br>
+            </div>
+        </div>
+    </div>
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Consistent4D Dataset Results</h2>
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>Baseline</th>
+                        <th>Align4D</th>
+                        <th>Baseline</th>
+                        <th>Align4D</th>
+                    </tr>
+                </table> 
+            </div>
+        </div> 
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c1\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c1\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c3\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c3\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c4\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c4\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c5\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c5\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c6\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c6\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c7\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c7\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c8\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c8\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c9\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c9\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c10\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c10\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c11\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c11\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c12\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c12\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c13\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c13\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <hr class="divider" />
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>X4D Dataset Results</h2>
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>Video</th>
+                        <th>3D</th>
+                        <th>Baseline</th>
+                        <th>Align4D</th>
+                    </tr>
+                </table> 
+            </div>
+        </div> 
+
+
+        <div class="container" style="max-width: 768px;">
+        <div class="compositional captioned_videos">
+            <table>
+                <tr>
+                    <th>
+                        <video class="video" autoplay loop playsinline muted>
+                        <source src="videos\show\1\video.mp4" type="video/mp4"></source>
+                        </video>
+                    </th>
+                    <th>
+                        <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\1\3D.mp4" type="video/mp4"></source>
+                            </video>
+                    </th>
+                    <th>
+                        <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\1\base.mp4" type="video/mp4"></source>
+                            </video>
+                    </th>
+                    <th>
+                        <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\1\Align4D.mp4" type="video/mp4"></source>
+                            </video>
+                    </th>
+                </tr>
+            </table>
+            
+        </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\2\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\2\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\2\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\2\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+                
+            </div>
+            </div>
+        
+        
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\4\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\4\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\4\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\4\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\5\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\5\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\5\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\5\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\7\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\7\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\7\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\7\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\8\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\8\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\8\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\8\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\9\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\9\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\9\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\9\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\10\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\10\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\10\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\10\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\11\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\11\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\11\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\11\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\13\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\13\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\13\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\13\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\14\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\14\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\14\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\14\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\15\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\15\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\15\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\15\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\16\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\16\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\16\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\16\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\17\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\17\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\17\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\17\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\20\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\20\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\20\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\20\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\22\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\22\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\22\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\22\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\23\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\23\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\23\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\23\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\25\video.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\25\3D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\25\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\25\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- <hr class="divider" />
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Part Of Consistent4D Dataset Results</h2>
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>Baseline</th>
+                        <th>Align4D</th>
+                        <th>Baseline</th>
+                        <th>Align4D</th>
+                    </tr>
+                </table> 
+            </div>
+        </div> 
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c1\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c1\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c3\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c3\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c4\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c4\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c5\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c5\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c6\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c6\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c7\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c7\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c8\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c8\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c9\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c9\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c10\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c10\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c11\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c11\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="compositional captioned_videos">
+                <table>
+                    <tr>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                            <source src="videos\show\c12\base.mp4" type="video/mp4"></source>
+                            </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c12\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c13\base.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                        <th>
+                            <video class="video" autoplay loop playsinline muted>
+                                <source src="videos\show\c13\Align4D.mp4" type="video/mp4"></source>
+                                </video>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div> -->
+
+
+
+
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <footer>
+            <p> Website template from <a href="https://sherwinbahmani.github.io/4dfy/">4dfy</a>. We thank the authors for the open-source code.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
